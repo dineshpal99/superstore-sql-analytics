@@ -13,7 +13,7 @@ This project answers real business questions using advanced T-SQL techniques:
 revenue performance, profitability, customer segmentation, regional trends,
 discount impact, and shipping analysis.
 
-> **Dataset:** Confidential retail client dataset — 9,994 rows · 19 columns · 2014–2017  
+> **Dataset:** Retail client dataset — 9,994 rows · 19 columns · 2014–2017  
 > **Database:** Microsoft SQL Server (T-SQL)  
 > **Skills:** Window Functions · CTEs · CASE WHEN · PIVOT · NULLIF ·
 > NTILE · LAG · RANK · DATEDIFF · DATEFROMPARTS
@@ -548,4 +548,4 @@ WITH (
 
 ---
 
-*Built by: [Your Name] · SQL Server (T-SQL) · Confidential retail client dataset · 2024*
+*Built by: Dinesh Pal · SQL Server (T-SQL) · Retail client dataset
