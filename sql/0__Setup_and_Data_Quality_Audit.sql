@@ -36,7 +36,7 @@ GO
 
 -- Step 3: Load data
 BULK INSERT dbo.retail_sales
-FROM 'C:\Your\Path\retail_data_clean.csv'
+FROM 'C:\Users\dines\OneDrive\Desktop\Interview Stuff\Final Files\github-sql-FINAL\clean_retail_data.csv'
 WITH
 (
     FORMAT = 'CSV',

@@ -112,4 +112,4 @@ All numbers verified from actual SQL Server query results.
 
 ---
 
-*All findings verified from SQL Server query results — 2024*
+*All findings verified from SQL Server query results*

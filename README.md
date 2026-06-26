@@ -84,15 +84,15 @@ File: Retail.csv
 Run the Python cleaning script to fix mixed date formats and
 quoted product names that confuse SQL Server BULK INSERT:
 ```bash
-python clean_Retail.py
-# Output: Retail_clean.csv
+python Data_Cleaning.py
+# Output: clean_retail_data.csv
 ```
 
 ### Step 3 — Load into SQL Server
 ```sql
 -- Update the file path, then run 0. Setup and Data Quality Audit.sql
-BULK INSERT dbo.Retail
-FROM 'C:\Your\Path\Retail_clean.csv'
+BULK INSERT dbo.retail_sales
+FROM 'C:\Users\dines\OneDrive\Desktop\Interview Stuff\Final Files\github-sql-FINAL\clean_retail_data.csv'
 WITH (
     FORMAT     = 'CSV',
     FIRSTROW   = 2,
@@ -548,4 +548,4 @@ WITH (
 
 ---
 
-*Built by: Dinesh Pal · SQL Server (T-SQL) · Retail client dataset
+*Built by: Dinesh Pal · SQL Server (T-SQL) · Retail client dataset*

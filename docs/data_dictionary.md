@@ -10,7 +10,7 @@
 
 ---
 
-## Table: dbo.Retail
+## Table: dbo.retail_sales
 
 | Column | SQL Type | Description | Notes |
 |--------|----------|-------------|-------|
@@ -77,6 +77,4 @@ using `clean_Retail.py`:
 3. **Double quotes removed** — quote characters (e.g. `72"H`) removed
    from product names for BULK INSERT compatibility
 
----
 
-*Last updated: 2024*
