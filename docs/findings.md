@@ -1,4 +1,8 @@
-# Key Findings — Superstore Sales Analytics
+# Key Findings — Retail Sales Analytics
+
+All numbers verified from actual SQL Server query results.
+
+---
 
 ## Setup & Data Quality (File 0)
 
@@ -93,7 +97,7 @@
 
 ---
 
-## Top Finding
+## Interview Story (Top Finding)
 
 > "The most valuable insight from this project came from combining two analyses.
 > The discount analysis showed that orders above 20% discount are consistently
@@ -105,3 +109,7 @@
 > My recommendation would be to cap all discounts at 20% across the board,
 > and specifically review the Binders, Tables, and Machines pricing strategies
 > where excessive discounting is destroying the most value."
+
+---
+
+*All findings verified from SQL Server query results — 2024*

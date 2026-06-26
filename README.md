@@ -1,19 +1,19 @@
-# 🛒 Superstore Sales Analytics — SQL Project
+# 🛒 Retail Sales Analytics — SQL Project
 
 ![SQL](https://img.shields.io/badge/SQL-SQL%20Server-CC2927?logo=microsoftsqlserver)
-![Dataset](https://img.shields.io/badge/Dataset-Sample%20Superstore-orange)
+![Dataset](https://img.shields.io/badge/Dataset-Sample%20Retail-orange)
 ![Queries](https://img.shields.io/badge/Queries-9%20Files-green)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
 ## 📌 Project Overview
 
-An end-to-end SQL analytics project on the **Sample Superstore** dataset — a US retail
+An end-to-end SQL analytics project on the **Retail client dataset** dataset — a US retail
 company selling Office Supplies, Technology, and Furniture across four regions.
 This project answers real business questions using advanced T-SQL techniques:
 revenue performance, profitability, customer segmentation, regional trends,
 discount impact, and shipping analysis.
 
-> **Dataset:** Sample Superstore (Kaggle) — 9,994 rows · 19 columns · 2014–2017  
+> **Dataset:** Confidential retail client dataset — 9,994 rows · 19 columns · 2014–2017  
 > **Database:** Microsoft SQL Server (T-SQL)  
 > **Skills:** Window Functions · CTEs · CASE WHEN · PIVOT · NULLIF ·
 > NTILE · LAG · RANK · DATEDIFF · DATEFROMPARTS
@@ -39,7 +39,7 @@ discount impact, and shipping analysis.
 ## 📂 Project Structure
 
 ```
-superstore-sql-analytics/
+Retail-sql-analytics/
 │
 ├── README.md
 │
@@ -76,23 +76,23 @@ superstore-sql-analytics/
 
 ### Step 1 — Download dataset
 ```
-Kaggle: https://www.kaggle.com/datasets/vivek468/superstore-dataset-final
-File: Superstore.csv
+client: https://www.client.com/datasets/vivek468/Retail-dataset-final
+File: Retail.csv
 ```
 
 ### Step 2 — Clean the CSV (required before import)
 Run the Python cleaning script to fix mixed date formats and
 quoted product names that confuse SQL Server BULK INSERT:
 ```bash
-python clean_superstore.py
-# Output: Superstore_clean.csv
+python clean_Retail.py
+# Output: Retail_clean.csv
 ```
 
 ### Step 3 — Load into SQL Server
 ```sql
 -- Update the file path, then run 0. Setup and Data Quality Audit.sql
-BULK INSERT dbo.superstore
-FROM 'C:\Your\Path\Superstore_clean.csv'
+BULK INSERT dbo.Retail
+FROM 'C:\Your\Path\Retail_clean.csv'
 WITH (
     FORMAT     = 'CSV',
     FIRSTROW   = 2,
@@ -548,4 +548,4 @@ WITH (
 
 ---
 
-*Built by: Dinesh Pal · SQL Server (T-SQL) · Sample Superstore (Kaggle) · 2024*
+*Built by: [Your Name] · SQL Server (T-SQL) · Confidential retail client dataset · 2024*

@@ -1,6 +1,6 @@
-# Data Dictionary — Superstore Sales Analytics
+# Data Dictionary — Retail Sales Analytics
 
-## Source: Sample Superstore (Kaggle)
+## Source: Retail (client)
 
 **Period:** January 2014 – December 2017
 **Rows:** 9,994
@@ -10,7 +10,7 @@
 
 ---
 
-## Table: dbo.superstore
+## Table: dbo.Retail
 
 | Column | SQL Type | Description | Notes |
 |--------|----------|-------------|-------|
@@ -67,7 +67,7 @@
 ## Pre-Processing Applied
 
 Before loading into SQL Server, the following cleaning was applied
-using `clean_superstore.py`:
+using `clean_Retail.py`:
 
 1. **Date standardisation** — `Order_Date` and `Ship_Date` converted
    from mixed formats (MM/DD/YYYY with slashes, MM-DD-YYYY with dashes)
@@ -77,3 +77,6 @@ using `clean_superstore.py`:
 3. **Double quotes removed** — quote characters (e.g. `72"H`) removed
    from product names for BULK INSERT compatibility
 
+---
+
+*Last updated: 2024*
